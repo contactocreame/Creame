@@ -1,0 +1,256 @@
+
+body {
+    background-color: #f4f4f4; 
+    color: #000;
+    font-family: 'Montserrat', sans-serif; 
+    padding: 0;
+    margin-bottom: 0;
+    min-height: 100vh !important;
+}
+
+.fondo-proyecto {
+    background-color: #f4f4f4; 
+    color: #000; 
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    min-height: 100vh !important;
+}
+
+.seccion-proyecto {
+    max-width: 1400px;
+    margin: 80px auto 100px; 
+    padding: 0 50px;
+    margin-bottom: 50px;
+    flex-grow: 1 !important;
+}
+
+/* Estilo botón volver */
+.boton-volver {
+    display: inline-block;
+    margin-bottom: 40px; 
+    color: #000;
+    text-decoration: none; 
+    font-size: 0.7rem;
+    font-weight: 600; 
+    text-transform: uppercase;
+    transition: transform 0.3s ease, color 0.3s ease; 
+    margin-left: 150px;
+}
+
+/* Hover */
+.boton-volver:hover {
+    transform: translateX(-5px); 
+    color: #666; 
+}
+
+/* Nombre, Descripción y Fecha */
+.proyecto-principal-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 100px; 
+    margin-bottom: 50px; 
+    align-items: start; 
+}
+
+.proyecto-info h1 {
+    font-size: 1rem; 
+    text-transform: uppercase; 
+    margin-bottom: 20px;
+    margin-left: 150px;
+}
+
+.proyecto-info p {
+    font-size: 0.7rem;
+    line-height: 1.6;
+    max-width: 400px;
+    margin-left: 150px;
+}
+
+.proyecto-metadata {
+    text-align: right; 
+}
+
+.proyecto-metadata p {
+    font-size: 0.7rem;
+     margin-right: 150px;
+}
+
+/* Galería de fotos */
+.proyecto-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.foto-galeria {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    border-radius: 0px; 
+}
+
+/* --- ESTILOS PÁGINA PROYECTO --- */
+
+.detalle-proyecto {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 50px;
+}
+
+
+.info-proyecto {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 100px;
+    margin-bottom: 80px;
+    align-items: start;
+}
+
+.columna-descripcion h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase; 
+}
+
+.columna-fecha p {
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 600; 
+}
+
+/* Fotos hacia abajo */
+.galeria-proyecto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.galeria-proyecto img {
+    width: 100%;
+    height: auto;
+}
+
+.foto-galeria-video {
+    width: 100%;
+    max-width: 500px;   
+    height: auto;
+}
+
+/* --- FOOTER --- */
+.pie-de-pagina {
+    font-family: "Montserrat", sans-serif;
+    background-color: #1a1a1a; 
+    color: #ffffff;
+    padding: 40px 2%; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 0px; 
+    letter-spacing: 1px;
+}
+
+.footer-nombre {
+    font-weight: medium;
+    font-size: 0.7rem;
+    margin: 0; 
+    text-transform: uppercase; 
+}
+
+.footer-derechos {
+    font-size: 0.7rem;
+    color: #cccccc; 
+    margin: 0;
+}
+
+/* Achicar fotos */
+.es-proyecto-2 .foto-galeria {
+    max-width: 650px !important; 
+}
+.es-proyecto-4 .foto-galeria {
+    max-width: 650px !important; 
+}
+
+.es-proyecto-5 .foto-galeria {
+    max-width: 650px !important; 
+}
+
+.es-proyecto-7 .foto-galeria {
+    max-width: 900px !important; 
+}
+
+.es-proyecto-9 .foto-galeria {
+    max-width: 600px !important; 
+}
+
+
+/* =========================================
+   DISEÑO RESPONSIVO (MÓVILES Y TABLETS)
+   ========================================= */
+
+@media (max-width: 768px) {
+    
+    /* 1. CABECERA Y MENÚ */
+    .navegacion-principal {
+        flex-direction: column; /* Pone el logo arriba y los links abajo */
+        gap: 20px;
+        padding: 20px;
+    }
+    
+  .enlaces {
+        flex-direction: row !important; /* Pone los links uno al lado del otro */
+        justify-content: center; /* Los centra en la pantalla */
+        flex-wrap: wrap; /* Si la pantalla es muy chiquita, evita que se corten */
+        gap: 20px; /* Espacio entre los botones */
+        padding: 0;
+    }
+
+    .columna-izq, 
+    .columna-der {
+        display: none !important; /* Esto borra los textos del mapa en la versión móvil */
+    }
+
+    /* Reemplaza .columna-centro por la clase que envuelve tus imágenes */
+    .columna-centro {
+        width: 100% !important; /* Esto hace que la columna de fotos tome todo el ancho disponible */
+    }
+    /* 2. PÁGINA DE EXPERIENCIAS */
+    .seccion-experiencias {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .lista-experiencias {
+        gap: 40px; /* Junta más los textos para que no haya tanto vacío */
+    }
+
+    .titulo-exp {
+        font-size: 0.9rem; /* Evita que los nombres largos se desborden */
+    }
+
+    /* 3. PÁGINAS DE PROYECTOS (Imágenes y Textos) */
+    .proyecto-principal-grid {
+        display: flex;
+        flex-direction: column; /* Pone la información arriba y las fotos abajo */
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .proyecto-gallery img, 
+    .proyecto-gallery video,
+    .foto-galeria {
+        width: 100% !important; /* Obliga a las fotos a no salirse de la pantalla */
+        height: auto;
+    }
+
+    /* 4. VENTANAS EMERGENTES (SOBRE MI / CONTACTO) */
+    .overlay-seccion {
+        padding: 20px;
+        align-items: flex-start; /* Permite hacer scroll si el contenido es muy largo */
+        overflow-y: auto;
+    }
+}

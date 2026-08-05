@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencias</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-proyecto.css">
+</head>
+<body class="fondo-proyecto">
+
+    <header class="mi-cabecera">
+        <nav class="navegacion-principal">
+            <a href="index.html" class="logo">
+                <img src="img/logocreame.png" width="100">
+            </a>
+            <ul class="enlaces">
+                <li><a href="#sobremi">SOBRE MI</a></li>
+                <li><a href="#experiencias.html">EXPERIENCIAS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="seccion-experiencias seccion-proyecto">
+        <ul class="lista-experiencias">
+            
+            <li>
+                <a href="experiencia.html?id=exp1">
+                    <span class="numero-exp">01</span>
+                    <span class="titulo-exp">PROGRAMA<br>ESTUDIANTES<br>DESTACADOS UDD</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="experiencia.html?id=exp2">
+                    <span class="numero-exp">02</span>
+                    <span class="titulo-exp">PROGRAMA<br>STARTING UP</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="experiencia.html?id=exp3">
+                    <span class="numero-exp">03</span>
+                    <span class="titulo-exp">CERTIFICACIÓN IA</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="experiencia.html?id=exp4">
+                    <span class="numero-exp">04</span>
+                    <span class="titulo-exp">PASANTÍA COCA-<br>COLA EMBONOR</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="experiencia.html?id=exp5">
+                    <span class="numero-exp">05</span>
+                    <span class="titulo-exp">PREMIO<br>LADERA SUR</span>
+                </a>
+            </li>
+
+             <li>
+                <a href="experiencia.html?id=exp6">
+                    <span class="numero-exp">06</span>
+                    <span class="titulo-exp">FUNDACIÓN<br>CASA FAMILIA</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="experiencia.html?id=exp7">
+                    <span class="numero-exp">07</span>
+                    <span class="titulo-exp">CASA EVA</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="experiencia.html?id=exp8">
+                    <span class="numero-exp">08</span>
+                    <span class="titulo-exp">PIZZERÍA ITAGLIO</span>
+                </a>
+            </li>
+
+        </ul>
+    </main>
+
+<!-- SOBRE MI -->
+<div id="sobremi" class="overlay-seccion">
+    
+    <a href="#" class="cerrar-overlay"></a> 
+    <div class="grid-sobre-mi">
+        
+        <!-- TEXTO PRINCIPAL -->
+        <div class="texto-principal">
+            <h2>ESTUDIANTE DE DISEÑO GRÁFICO</h2>
+            <p>¡Hola!
+Soy Amelia Spencer, estudiante de diseño gráfico de la Universidad del Desarrollo radicada en Chile. Me inclino hacia el branding y el diseño editorial, donde me gusta crear piezas visuales claras, estratégicas y visualmente distintivas.
+
+Busco construir identidades visuales que conecten de forma significativa y ayuden a las marcas a diferenciarse con propósito.</p>
+        </div>
+
+        <!-- TÍTULO DE HABILIDADES -->
+        <div class="titulo-programas">
+            <h2>MANEJO DE PROGRAMAS</h2>
+        </div>
+
+        <!-- PROGRAMAS (Fila 1) -->
+        <span class="prog p-ill">ILLUSTRATOR</span>
+        <span class="prog p-ps">PHOTOSHOP</span>
+        <span class="prog p-id">INDESIGN</span>
+        <span class="prog p-ae">AFTER EFFECTS</span>
+        <span class="prog p-cap">CAPCUT</span>
+        <span class="prog p-xls">EXCEL</span>
+
+        <!-- PROGRAMAS (Fila 2) -->
+       <span class="prog p-blend">BLENDER</span>
+         <span class="prog p-fram">FRAMER</span>
+        <span class="prog p-auto">AUTODESK FUSION</span>
+        <span class="prog p-mas">Y APRENDIENDO MÁS...</span>
+
+        <!-- BOTÓN CV -->
+       <a href="assets/CV_AmeliaSpencer.pdf" class="btn-cv" target="_blank">DESCARGA MI CV AQUÍ</a>
+    </div>
+
+    <!-- Botón X para cerrar -->
+    <a href="#" class="btn-cerrar">✕</a>
+</div>
+
+<!-- FORMULARIO E CONTACTO -->
+<div id="contacto" class="overlay-contacto">
+    
+    <!-- Fondo invisible para cerrar haciendo clic afuera -->
+    <a href="#" class="cerrar-overlay"></a> 
+
+    <div class="grid-contacto">
+        
+        <!-- EL FORMULARIO (Lado izquierdo) -->
+        <div class="bloque-formulario">
+            <h2>CONTACTO</h2>
+            
+            <form action="#" method="POST">
+                <label for="nombre">NOMBRE</label>
+                <input type="text" id="nombre" name="nombre">
+
+                <label for="correo">MAIL</label>
+                <input type="email" id="correo" name="correo">
+
+                <label for="tema">TEMA</label>
+                <input type="text" id="tema" name="tema">
+
+                <label for="mensaje">MENSAJE</label>
+                    <textarea id="mensaje" name="mensaje" rows="3" minlength="50" maxlength="500"></textarea>
+
+                <button type="submit" class="btn-enviar">ENVIAR</button>
+            </form>
+        </div>
+
+
+        <!-- LOS ENLACES SOCIALES -->
+        <a href="mailto:contacto.creame@gmail.com" class="link-social c-mail">MAIL</a>
+        <a href="https://www.instagram.com/creeaame?igsh=NTJ5bjE3dWx4NXQ3" target="_blank" class="link-social c-ig">INSTAGRAM</a>
+        <a href="tel:+56984420882" class="link-social c-tel">TELEFONO</a>
+        <a href="https://www.linkedin.com/in/amelia-spencer-16bb1b353/" target="_blank" class="link-social c-in">LINKEDIN</a>
+        
+    </div>
+
+    <!-- La cruz para cerrar -->
+        <a href="#" class="cerrar-x">✕</a>
+</div>
+
+    <footer class="pie-de-pagina">
+        <div class="footer-izq">
+            <p class="footer-nombre">Amelia Spencer</p>
+        </div>
+        <div class="footer-der">
+            <p class="footer-derechos">© 2026 Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,618 @@
+body {
+    background-color: whitesmoke;
+    margin-top: 0;
+    padding: 0;
+    min-height: 100vh !important;
+}
+
+/* fuentes */
+.fuente-principal {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; 
+    font-style: normal;
+}
+
+/* NAV BAR, PAGINA PRINCIPAL */
+* {
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* CONTENEDOR DE LA CABECERA */
+.mi-cabecera {
+    width: 100%;
+    padding: 0; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: transparent; 
+    padding-top: 0px; 
+    padding-bottom: 0px;
+}
+
+/* 3. EL NAV OCUPA TODO EL ANCHO */
+.navegacion-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: none;
+  
+}
+
+/*  ESTILOS DEL LOGO */
+.logo img {
+    margin-left: 30px;
+    display: block; 
+     padding-top: 5px; 
+}
+
+/*  ESTILOS PARA LOS ENLACES  */
+.enlaces {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    margin-right: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Hover */
+.enlaces a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.enlaces a:hover {
+    color: #b3b3b3;
+} 
+
+/* INDICE PROYECTOS */
+.indice-proyectos {
+    display: flex;
+    justify-content: space-between; 
+    padding-top: 0px;
+    padding-bottom: 0px; 
+    margin-left: 0px !important;
+    position: sticky;
+    margin-top: -30px;
+}
+
+.enlace-proyecto:first-child {
+    margin-top: 0;
+}
+
+/* ESTILOS DE LAS COLUMNAS */
+.columna-texto {
+    list-style: none;
+    padding: 0;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 100px; 
+    height: 85vh; 
+    justify-content: space-between; 
+    width:20%; 
+    margin-right: 0px;
+    margin-bottom: 50px;
+}
+
+/* ESTILOS DE CADA LÍNEA*/
+.columna-texto li {
+    display: flex;
+    align-items: center;
+    scroll-margin-top: 100px;
+    
+}
+
+/* El número*/
+.numero {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    color: #b3b3b3;
+    width: 100px;
+    transition: color 0.3s ease;
+}
+
+/* El enlace del proyecto */
+.columna-texto a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: #b3b3b3;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease; 
+    margin: 0;
+    max-width: 100px;
+    
+}
+
+/* HOVER*/
+.columna-texto li:hover a,
+.columna-texto li:hover .numero,
+.columna-texto li.hover-activo a,
+.columna-texto li.hover-activo .numero {
+    color: #000;
+    font-weight: 700; 
+}
+
+.columna-texto li:hover a {
+    font-weight: 700; 
+    } 
+
+    /* --- OVERLAY SOBRE MÍ --- */
+.overlay-seccion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(235, 230, 230, 0.90); 
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    z-index: 3000;
+}
+
+.overlay-seccion:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cerrar-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    cursor: default;
+    z-index: 1;
+}
+
+/* --- EL SISTEMA DE 12 COLUMNAS) --- */
+.grid-sobre-mi {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px; 
+    margin: 0 auto;
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    align-content: center; 
+    row-gap: 20px; 
+}
+
+/* --- UBICANDO CADA PIEZA EN SU COLUMNA --- */
+
+.texto-principal {
+    grid-column: 3 / 8; 
+    margin-bottom: 40px;
+}
+
+.texto-principal h2, .titulo-programas h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.texto-principal p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.titulo-programas {
+    grid-column: 3 / 8;
+    
+}
+
+/* Estilo general para los textos de los programas */
+.prog {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.65rem;
+    color: #333;
+}
+
+/* Carriil*/
+.p-ill  { grid-column: 3; }
+.p-ps   { grid-column: 4; }
+.p-id   { grid-column: 5; }
+.p-ae   { grid-column: 6; }
+.p-cap  { grid-column: 7; }
+.p-xls  { grid-column: 8; }
+.p-auto { grid-column: 5; margin-top: 15px; text-align: left; }
+.p-blend { grid-column: 3; margin-top: 15px;}
+.p-fram  { grid-column: 4; margin-top: 15px;}
+.p-mas   { grid-column: 10 / 12; text-align: center; margin-top: 15px; }
+
+/* El botón CV */
+.btn-cv {
+    grid-column: 10 / 13; 
+    margin-top: 60px;
+    background-color: rgb(188, 188, 188); 
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px; 
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+    width: 200px;
+}
+
+.btn-cv:hover {
+    transform: scale(1.05); 
+}
+
+.btn-cerrar {
+    position: absolute;
+    top: 40px; right: 50px;
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: none;
+    z-index: 2;
+    display: inline-block; 
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.btn-cerrar:hover { 
+    opacity: 0.5; 
+    transform: rotate(90deg) scale(1.1); 
+    cursor: pointer;
+}
+
+/* --- OVERLAY DE CONTACTO --- */
+
+.overlay-contacto {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background-color: rgba(235, 230, 230, 0.90); 
+    z-index: 1000;
+    
+    /* Esto es lo que lo mantiene oculto hasta hacer clic */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+.overlay-contacto:target {
+    opacity: 1; 
+    visibility: visible;
+}
+
+.cerrar-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    cursor: default;
+    z-index: 1;
+}
+
+.cerrar-x {
+    position: absolute;
+    top: 40px; right: 50px;
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: none;
+    z-index: 2;
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.cerrar-x:hover {
+    opacity: 0.5;
+    transform: rotate(90deg) scale(1.1);
+}
+
+/* --- LA GRILLA DE 12 COLUMNAS --- */
+.grid-contacto {
+    position: relative;
+    z-index: 2;
+    width: 100%; height: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+    
+   
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-content: center; 
+}
+
+/* --- EL FORMULARIO --- */
+.bloque-formulario {
+    grid-column: 3 / 5; 
+    grid-row: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.bloque-formulario h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.bloque-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; 
+}
+
+.bloque-formulario label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    color: #333;
+    margin-bottom: -15px; 
+}
+
+.bloque-formulario input,
+.bloque-formulario textarea {
+    width: 150%;
+    background-color: rgb(188, 188, 188); 
+    border: none;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    resize: none; 
+}
+
+    .bloque-formulario input,
+.bloque-formulario textarea {
+    width: 100%;
+    background-color: rgb(188, 188, 188); 
+    border: none;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    resize: none; 
+    font-size: 0.8rem;
+    outline: 0.5px  #000; 
+}
+
+.btn-enviar {
+    background: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    text-align: left;
+    padding: 0;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.btn-enviar:hover {
+    opacity: 0.5;
+}
+
+/* --- LOS ENLACES INFERIORES --- */
+.link-social {
+    margin-top: 70px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    color: #000; 
+    opacity: 0.5; 
+    text-decoration: none;
+    transition: opacity 0.3s ease; 
+}
+
+.link-social:hover {
+    opacity: 10; 
+}
+
+.c-mail { grid-column: 4; }
+.c-ig   { grid-column: 6; }
+.c-tel  { grid-column:8; }
+.c-in   { grid-column: 10; }
+
+
+/* CARRUSEL DE FOTOS */
+/* --- CONTENEDOR PRINCIPAL --- */
+.contenedor-galeria {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    margin-top: 50px; 
+    margin-bottom: 50px;
+    align-items: start;
+}
+
+/* --- EL CARRUSEL VERTICAL --- */
+.carrusel-vertical {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0px; 
+    padding-bottom: 0px; 
+    align-items: center;
+}
+
+.carrusel-vertical::-webkit-scrollbar {
+    display: none; 
+}
+
+/* --- LAS FOTOS --- */
+.foto-carrusel {
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+/* Al pasar el mouse */
+.foto-carrusel:hover {
+    opacity: 0.8;
+}
+
+/* --- FOOTER --- */
+.pie-de-pagina {
+    font-family: "Montserrat", sans-serif;
+    background-color: #1a1a1a; 
+    color: #ffffff;
+    padding: 40px 2%; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 0px; 
+    letter-spacing: 1px;
+}
+
+.footer-nombre {
+    font-weight: medium;
+    font-size: 0.7rem;
+    margin: 0; 
+    text-transform: uppercase; 
+}
+
+.footer-derechos {
+    font-size: 0.7rem;
+    color: #cccccc; 
+    margin: 0;
+}
+
+/* EXPERIENCIAS */
+.seccion-experiencias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 50px !important;
+}
+
+.lista-experiencias {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 80px; 
+}
+
+.lista-experiencias a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+}
+
+.numero-exp {
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.titulo-exp {
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.lista-experiencias a:hover .titulo-exp {
+    font-weight: 700;
+}
+
+
+@media (max-width: 768px) {
+    
+    .mi-cabecera {
+        background-color: #f3f3f3 !important;
+        width: 100% !important;
+        padding-bottom: 20px !important;
+        z-index: 1000 !important; 
+        margin-top: 0;
+    }
+
+    body {
+        padding-top: 0px !important; 
+    }
+    .navegacion-principal {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+  .logo img {
+        margin-left: 0 !important;
+    }
+
+    .enlaces {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        width: 100% !important;
+        gap: 15px !important;
+        margin-top: 15px !important;
+        margin-bottom: 0 !important;
+        padding: 0 !important;
+        margin-left: 30px;
+    }
+
+    .seccion-proyecto,
+    .proyecto-principal-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+
+    .columna-centro {
+        width: 85% !important; 
+        margin: 0 auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .columna-centro img {
+        width: 100% !important;
+        margin-bottom: 40px !important;
+    }
+
+    .columna-texto.izquierda,
+    .columna-texto.derecha {
+        display: none !important;
+    }
+}
+
+CSS
+    .formulario-contacto, 
+    #contacto form {
+        width: 90% !important; 
+        margin: 0 auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .formulario-contacto input, 
+    .formulario-contacto textarea,
+    #contacto input,
+    #contacto textarea {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important; 
+        margin-bottom: 15px !important;
+        padding: 10px !important;
+    }

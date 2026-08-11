@@ -92,6 +92,13 @@ La propuesta de rediseño incluyó:
 
 
 export const experienciasData = {
+ "exp0": {
+        name: "MINOR EMPRENDIMIENTO Y LIDERAZGO UDD",
+        date: "JUN 2026",
+        description: "",
+        images: ["img/Experiencias/exp0.png"]
+        },
+
     "exp1": {
         name: "PROGRAMA ESTUDIANTES DESTACADOS UDD",
         date: "MAR 2026",

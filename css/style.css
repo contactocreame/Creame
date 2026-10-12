@@ -528,9 +528,7 @@ body {
     text-transform: uppercase;
 }
 
-.lista-experiencias a:hover .titulo-exp {
-    font-weight: 700;
-}
+
 
 
 @media (max-width: 768px) {

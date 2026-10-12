@@ -44,7 +44,7 @@ La propuesta de rediseño incluyó:
 <br> +  Mockups con packaging de vidrio para comunicar calidad y alinearse con la filosofía de sustentabilidad.
 <br> +  Uso de fotografía real para fortalecer la identidad y conexión emocional con el público.
 <br> Se aplicó una metodología de investigación y análisis profundo de la marca, su contexto y su público, lo que permitió tomar decisiones de diseño fundamentadas, potenciar su discurso y fortalecer su conexión con un consumidor cada vez más consciente y exigente.`,
-    images: ["img/Proyecto5/p5_1.png", "img/Proyecto5/p5_2.png", "img/Proyecto5/p5_3.png", "img/Proyecto5/p5_4.png", "img/Proyecto5/p5_5.png", "img/Proyecto5/p5_6.png", "img/Proyecto5/p5_7.png", "img/Proyecto5/p5_8.png", "img/Proyecto5/p5_9.png", "img/Proyecto5/p5_10.png", "img/Proyecto5/p5_11.png", "img/Proyecto5/p5_12.png", "img/Proyecto5/p5_13.png", "img/Proyecto5/p5_14.png"]
+    images: ["img/Proyecto5/p5_1.png", "img/Proyecto5/p5_2.png",  "img/Proyecto5/p5_8.png", "img/Proyecto5/p5_9.png", "img/Proyecto5/p5_10.png", "img/Proyecto5/p5_11.png", "img/Proyecto5/p5_12.png", "img/Proyecto5/p5_13.png", "img/Proyecto5/p5_14.png", "img/Proyecto5/p5_3.png", "img/Proyecto5/p5_4.png", "img/Proyecto5/p5_5.png", "img/Proyecto5/p5_6.png", "img/Proyecto5/p5_7.png",]
   },
 
   "6": {
@@ -87,66 +87,6 @@ La propuesta de rediseño incluyó:
     images: ["img/Proyecto10.png", "img/Proyecto10/p10_1.png", "img/Proyecto10/p10_2.png", "img/Proyecto10/p10_3.png", "img/Proyecto10/p10_4.png", "img/Proyecto10/p10_5.png", "img/Proyecto10/p10_6.png", "img/Proyecto10/p10_7.png", "img/Proyecto10/p10_8.png", "img/Proyecto10/p10_9.png"]
   },
 
-
-};
-
-
-export const experienciasData = {
- "exp0": {
-        name: "MINOR EMPRENDIMIENTO Y LIDERAZGO UDD",
-        date: "JUN 2026",
-        description: "",
-        images: ["img/Experiencias/exp0.png"]
-        },
-
-    "exp1": {
-        name: "PROGRAMA ESTUDIANTES DESTACADOS UDD",
-        date: "MAR 2026",
-        description: "Programa que premia a estudiantes que han alcanzado logros significativos durante su trayectoria académica, reflejo de su compromiso, dedicación y esfuerzo, así como a quienes han participado activamente en la vida universitaria, demostrando liderazgo o vocación de servicio.",
-        images: ["img/Experiencias/exp1.png"]
-    },
-    "exp2": {
-        name: "PROGRAMA STARTING UP",
-        date: "FEB 2026",
-        description: "El programa Starting Up de MinnaLearn es un curso que enseña los fundamentos del emprendimiento y cómo crear una startup. Está diseñado para pensar como un emprendedor y a resolver problemas del mundo real creando algo nuevo.",
-        images: ["img/Experiencias/exp2.png"]
-    },
-    "exp3": {
-        name: "CERTIFICACIÓN IA",
-        date: "DIC 2025", 
-        description: "Certificación de la Oficina de Inteligencia Artificial de la Vicerrectoría de Tecnologías de la Información de la Universidad de Chile en el curso ¡Atrévete a dar el salto con la IA Generativa!",
-        images: ["img/Experiencias/exp3.png"] 
-    },
-    "exp4": {
-        name: "PASANTÍA COCA-COLA EMBONOR",
-        date: "2024",
-        description: "Creación y adaptación de piezas gráficas para canales de e-commerce de una marca multinacional de consumo masivo. Trabajo bajo lineamientos de marca globales, asegurando coherencia visual y cumplimiento de estándares corporativos.",
-        images: ["img/Experiencias/exp4.png"]
-    },
-    "exp5": {
-        name: "PREMIO LADERA SUR",
-        date: "OCT 2025",
-        description: "Premiación Afiches por la Naturaleza, Ladera Sur. Mención Honrosa entre los 20 seleccionados de más de 1000 participantes a nivel nacional",
-        images: ["img/Experiencias/exp5.png"]
-    },
-       "exp6": {
-        name: "FUNDACIÓN CASA FAMILIA",
-        date: "OCT 2024",
-        description: "Proyecto RED junto a Fundación Casa Familia para su calendario 2025. <br> Por mi parte, tomé como principal objeto de inspiración los “lazos maternos”, queriendo demostrar la importancia de la figura materna en la vida de un niñ@. Se buscó además jugar con los patrones y texturas, con el fin de proporcionar más dinamismo y movimiento. Por último, la paleta de colores de tonos pasteles fue elegida con el motivo de transmitir paz y cariño.",
-        images: ["img/Experiencias/exp6.png", "img/Experiencias/exp7.png", "img/Experiencias/exp8.png"]
-    },
-    "exp7": {
-        name: "CASA EVA",
-        date: "NOV 2024",
-        description: "Para este proyecto le di a la identidad un aspecto natural, que recordara a un lugar tranquilo y relajante, pero sin dejar de lado lo clásico y, al mismo tiempo, la modernidad. Esto se logró utilizando una paleta de colores acotada para más limpieza visual, en conjunto con una tipografía con serif acompañada de una sin serif para equilibrar.",
-        images: ["img/Experiencias/exp9.png", "img/Experiencias/exp10.png", "img/Experiencias/exp11.png", "img/Experiencias/exp12.png", "img/Experiencias/exp13.png", "img/Experiencias/exp14.png"]
-    },
-     "exp8": {
-        name: "PIZZERÍA ITAGLIO",
-        date: "OCT 2024",
-        description: "El fin fue darle un aspecto más moderno, juvenil y con una imagen acorde a su público. Se sintetizaron elementos como la cantidad de colores y de elementos gráficos para así lograr una mayor limpieza visual. Con este mismo fin, se optó por una tipografía sans serif.",
-        images: ["img/Experiencias/exp15.png", "img/Experiencias/exp16.png", "img/Experiencias/exp17.png", "img/Experiencias/exp18.png", "img/Experiencias/exp19.png", "img/Experiencias/exp20.png", "img/Experiencias/exp21.png", "img/Experiencias/exp22.png"]
-    },
 
 };
 
